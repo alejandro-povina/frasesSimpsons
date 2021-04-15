@@ -3,7 +3,8 @@ import './spinner.css'
 
 const Spinner = () => {
   return (
-    <div className="sk-chase">
+      <div>
+<div className="sk-chase">
       <div className="sk-chase-dot"></div>
       <div className="sk-chase-dot"></div>
       <div className="sk-chase-dot"></div>
@@ -11,6 +12,8 @@ const Spinner = () => {
       <div className="sk-chase-dot"></div>
       <div className="sk-chase-dot"></div>
     </div>
+      </div>
+    
   );
 };
 

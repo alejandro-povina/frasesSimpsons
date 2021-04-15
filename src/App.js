@@ -28,7 +28,7 @@ function App() {
     setTimeout(()=>{
       setCargando(false);
       setPersonaje(resultado[0]);
-    },3000);
+    },2500);
     
   };
   //operador ternario. (condicion logica)?(codigo a ejecutar cuando es la condicion logica es verdadera):(codigo a ejecutar cuando la condicion es falsa)

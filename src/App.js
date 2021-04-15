@@ -33,7 +33,7 @@ function App() {
   };
   //operador ternario. (condicion logica)?(codigo a ejecutar cuando es la condicion logica es verdadera):(codigo a ejecutar cuando la condicion es falsa)
   //componente condicional
-  const mostrarComponente = (cargando === true)?(<Spinner></Spinner>):(<Frase personaje={personaje}></Frase>);
+  const mostrarComponente = (cargando === true)?(<div><Spinner></Spinner></div>):(<Frase personaje={personaje}></Frase>);
 
   return (
    <section className="container d-flex flex-column align-items-center my-5">

@@ -33,13 +33,16 @@ function App() {
   };
   //operador ternario. (condicion logica)?(codigo a ejecutar cuando es la condicion logica es verdadera):(codigo a ejecutar cuando la condicion es falsa)
   //componente condicional
-  const mostrarComponente = (cargando === true)?(<div><Spinner></Spinner></div>):(<Frase personaje={personaje}></Frase>);
+  const mostrarComponente = (cargando === true)?(<Spinner></Spinner>):(<Frase personaje={personaje}></Frase>);
 
   return (
    <section className="container d-flex flex-column align-items-center my-5">
      <img className="w-75" src={process.env.PUBLIC_URL+'logo.png'} alt=""/>
      <Button className="w-75 my-4 " variant="warning" onClick={()=>consultarAPI()}>Obtener frase</Button>
+     <div>
      {mostrarComponente}
+     </div>
+     
    </section>
   );
 }
